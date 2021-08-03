@@ -2,8 +2,8 @@ version: "3"
 
 services:
   conceald:
-    image: conceald
-    container_name: conceald
+    image: conceald-elastic
+    container_name: conceald-elastic
     restart: unless-stopped
     stop_grace_period: 1m
     build:

@@ -20,7 +20,7 @@ RUN apt-get update && \
     libboost-regex1.71-dev \
     libboost-program-options1.71-dev
 
-RUN git clone https://github.com/ConcealNetwork/conceal-core
+RUN git clone https://github.com/AxVultis/conceal-core -b elastic
 
 WORKDIR /conceal-core/build
 
