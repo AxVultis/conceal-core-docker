@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  conceald:
+    image: conceald
+    container_name: conceald
+    restart: unless-stopped
+    stop_grace_period: 1m
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:16000:16000
+    volumes:
+      - ./conceal-data:/root/.conceal
+
