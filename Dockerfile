@@ -46,4 +46,4 @@ EXPOSE 16000
 
 ENTRYPOINT ["/opt/conceal-core/conceald"]
 
-CMD ["-i", "--rpc-bind-ip", "0.0.0.0", "--log-file", "/dev/stdout"]
+CMD ["-i", "--rpc-bind-ip", "0.0.0.0"]
